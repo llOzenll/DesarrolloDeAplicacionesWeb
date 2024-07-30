@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Objetos</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div>
+        <h2>Ejercicio Objetos</h2>
+        <p>
+            Ver consola
+        </p>
+    </div>
+    <script>
+
+        let Notas = {
+            nombre:'',
+            Ingles: [],
+            programación: [],
+            HTML:[],
+        }
+
+        Notas.nombre = prompt('Dime el nombre del alumno');
+
+        Notas.Ingles[0] = prompt('dime las sus notas de ingles');
+        Notas.Ingles[0] = parseFloat(Notas.Ingles)+0;
+        Notas.Ingles[1] = prompt('dime las sus notas de ingles');
+        Notas.Ingles[1] = parseFloat(Notas.Ingles)+0;
+        Notas.Ingles[2] = prompt('dime las sus notas de ingles');
+        Notas.Ingles[2] = parseFloat(Notas.Ingles)+0;
+        Notas.Ingles[3] = prompt('dime las sus notas de ingles');
+        Notas.Ingles[3] = parseFloat(Notas.Ingles)+0;
+
+        let notaI = Notas.Ingles.reduce((total,notas) => total + notas,0);
+        let mediaI = notaI/Notas.Ingles.length;
+
+        Notas.programación[0] = prompt('dime las sus notas de programación');
+        Notas.programación[0] = parseFloat(Notas.programación)+0;
+        Notas.programación[1] = prompt('dime las sus notas de programación');
+        Notas.programación[1] = parseFloat(Notas.programación)+0;
+        Notas.programación[2] = prompt('dime las sus notas de programación');
+        Notas.programación[2] = parseFloat(Notas.programación)+0;
+        Notas.programación[3] = prompt('dime las sus notas de programación');
+        Notas.programación[3] = parseFloat(Notas.programación)+0;
+
+        let notaP= Notas.programación.reduce((total,notas) => total + notas,0);
+        let mediaP = notaP/Notas.programación.length;
+
+        Notas.HTML[0] = prompt('dime las sus notas de HTML');
+        Notas.HTML[0] = parseFloat(Notas.HTML)+0;
+        Notas.HTML[1] = prompt('dime las sus notas de HTML');
+        Notas.HTML[1] = parseFloat(Notas.HTML)+0;
+        Notas.HTML[2] = prompt('dime las sus notas de HTML');
+        Notas.HTML[2] = parseFloat(Notas.HTML)+0;
+        Notas.HTML[3] = prompt('dime las sus notas de HTML');
+        Notas.HTML[3] = parseFloat(Notas.HTML)+0;
+
+        let notaH = Notas.HTML.reduce((total,notas) => total + notas,0);
+        let mediaH = notaH/Notas.HTML.length;
+
+        console.log(`hola ${Notas.nombre} la media de Ingles es de ${mediaI},la media de programación es de ${mediaP} y la media de HTML es de ${mediaH}`);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Resultado 7</title>
+    </head>
+    <body>
+        
+        <h1>Refrescar la Pagina para que el programa funcione!</h1>
+
+        <script>
+            
+            let peso = prompt("dime tu peso en kilogramos");
+            let altura = prompt("dime tu altura en cm");
+
+            altura=altura/100;
+            
+            resultado= peso /Math.pow(altura, 2);
+                       
+            alert("tu IMC es: " + resultado);
+
+            if(resultado < 16 ){
+                alert("tu peso es bajo");
+            }
+            else if(resultado >= 16 && resultado < 25 ){
+                alert("tu peso es normal");
+            }
+            else if(resultado >= 25 && resultado < 30 ){
+                alert("Tienes sobrepeso");
+            }
+            else if(resultado > 30){
+                alert("Tienes obesidad");
+            }
+            else{
+                alert("Error");
+            }
+
+        </script>
+
+    </body>
+</html>

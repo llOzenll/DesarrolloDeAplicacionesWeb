@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Resultado 1</title>
+    </head>
+    <body>
+        <h1>Refrescar la Pagina para que el programa funcione!</h1>
+
+        <script>
+
+            //// Con While /////
+
+            alert("Este parte es con While");
+            
+            let num0 = prompt("dime un numero para la cuenta regresiva!");
+
+            if(num0 < 0) alert("Error! Tiene que ser un numero mayor a 0");
+
+
+            while(num0 > 0){
+                alert(num0);
+                num0--;
+            }
+            alert("DESPEGUE!!");
+
+            //// Con Do While /////
+
+            alert("Esta con Do While");
+
+            let num1 = prompt("dime un numero para la cuenta regresiva!");
+
+            if(num1 < 0) alert("Error! Tiene que ser un numero mayor a 0");
+
+            do{
+                alert(num1);
+                num1--;
+
+            }while(num1 > 0)
+            alert("DESPEGUE!!");
+
+            //// Con For /////
+
+            alert("Esta con For");
+
+            let num2 = prompt("dime un numero para la cuenta regresiva!");
+
+            if(num2 < 0) alert("Error! Tiene que ser un numero mayor a 0");
+
+            for(let numCero = -1; num2 > numCero; num2--){
+                alert(num2);
+            }
+            alert("DESPEGUE!!");
+
+            /// Fin Del Programa ///
+
+            alert("Fin del programa");
+            
+        </script>
+
+    </body>
+</html>

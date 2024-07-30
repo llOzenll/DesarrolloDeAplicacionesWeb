@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Resultado 9</title>
+    </head>
+    <body>
+        
+        <h1>Refrescar la Pagina para que el programa funcione!</h1>
+
+        <script>
+            
+            let cantidad = prompt("dime una cantidad para cambiar a euro");
+            let moneda = prompt("dime la moneda d = dolar, l = libra, y = yen");
+
+            let dolarEuro = 0.92;
+            let libraEuro = 1.17;
+            let yenEuro = 0.0061;
+
+            if(moneda == "d"){
+                cantidad= cantidad * dolarEuro;
+
+                alert("el cambio de dolares a euros es: " + cantidad + " euros");
+            }
+            else if(moneda == "l"){
+                cantidad= cantidad * libraEuro;
+
+                alert("el cambio de libras a euros es: " + cantidad + " euros");
+            }
+            if(moneda == "y"){
+                cantidad= cantidad * yenEuro;
+
+                alert("el cambio de yenes a euros es: " + cantidad + " euros");
+            }
+            
+        </script>
+
+    </body>
+</html>

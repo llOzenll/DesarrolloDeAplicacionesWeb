@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'GoogleSans';
+    src: url(/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf)format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+html{
+    width: auto;
+}
+
+body{
+    text-align: center;
+    font-family: 'GoogleSans';
+
+}
+
+h2{
+    margin-top: 5%;
+}
+button{
+    font-family: 'GoogleSans';
+}

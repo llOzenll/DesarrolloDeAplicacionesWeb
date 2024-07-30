@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculadora</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+    <!-- <h2>dime dos numeros y te dare su potencia</h2> -->
+    
+    <div>
+        <table id="tabla" style="border: 4px solid red;text-align:center;
+            vertical-align:middle;min-width: 300px;margin:auto;">
+            <tr><td></td><td></td></tr>
+        </table>
+        <table id="tabla1" style="border: 4px solid red;text-align:center;
+            vertical-align:middle;min-width: 300px;margin:auto;">
+            <tr><td></td><td></td></tr>
+        </table>
+
+    </div>
+        
+    
+    <script>
+        
+        let num = prompt('dime un numero');
+        let num1 = prompt('dime a cuanto quieres que lo eleve'); 
+        num = parseInt(num);
+        num1 = parseInt(num1);
+        let Resultado = Math.pow(num,num1);
+        
+        let tabla = "<TR><TH>numero</TH><TH>Potencia</TH></TR>";
+        document.getElementById('tabla').innerHTML = tabla;
+
+        let tabla1 = '<tr><td>' + num + '</td><td>' +  Resultado + '</td></tr>';
+        document.getElementById('tabla1').innerHTML = tabla1;
+    
+
+    </script>
+
+</body>
+
+</html>

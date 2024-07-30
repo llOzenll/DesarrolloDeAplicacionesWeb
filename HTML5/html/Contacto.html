@@ -1,0 +1,91 @@
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="/styleContactos.css">
+
+        <title>Curso de HTML y CSS</title>
+
+    </head>
+        
+    <body>
+        
+        <div id="page">
+            
+            <header>
+
+                <h1><img id="logoImg" src="/Styles/imgs/logo.png">&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Curso de HTML y CSS3</h1>
+            
+            </header>
+            
+
+            <nav>
+                <ul>
+                    <li id="Contenidos">Contenidos
+                        <ul>
+                            <li><a href="/html/index.html">Contenidos1</a></li>                               
+                            <li><a href="/html/index.html">Contenidos2</a></li>                   
+                            <li><a href="/html/index.html">Contenidos3</a></li>
+                        </ul> 
+                    </li>
+                            
+                    <li id="Videos">Videos
+                        <ul>
+                            <li><a href="/html/Videos.html">Videos1</a></li>                               
+                            <li><a href="/html/Videos.html">Videos2</a></li>                   
+                            <li><a href="/html/Videos.html">Videos3</a></li>
+                        </ul> 
+                    </li>
+                            
+                    <li id="Contactos">Contactos
+                        <ul>
+                            <li><a href="/html/Contacto.html">Contactos1</a></li>                               
+                            <li><a href="/html/Contacto.html">Contactos2</a></li>                   
+                            <li><a href="/html/Contacto.html">Contactos3</a></li>                       
+                        </ul> 
+                    </li>
+                </ul>
+            </nav>  
+            
+            <main>
+                <div id="contenedorFormulario">
+
+                    <h1>Contáctenos</h1>
+
+                    <form>
+
+                        <input type="text" list="nombres" id="nombre" placeholder="Escriba su nombre" required>
+                        
+                        <datalist id="nombres">
+                            <option value="alex">
+                            <option value="juan">
+                            <option value="ana">
+                            <option value="pedro">
+                        </datalist>
+
+                        <input type="email" id="email" placeholder="Escriba su Email" required>
+
+                        <textarea placeholder="Su mensaje..." name="textarea"></textarea>
+
+                        <button type="submit" id="boton">Enviar</button>
+
+                    </form>
+                </div>
+            </main>
+
+           
+
+            <footer>
+                <p>
+                    Josue Antonio Vega Heredia © 2024. Curso de HTML5 y CSS3.
+                </p>
+            </footer>
+
+
+        </div>
+
+        <script src="/script/contacto.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,477 @@
+@font-face {
+    font-family: 'Luckiest Guy';
+    src: url(/Fonts/Luckiest_Guy/LuckiestGuy-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Abel';
+    src: url(/Fonts/Abel/Abel-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Aguafina Script';
+    src: url(/Fonts/Aguafina_Script/AguafinaScript-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@media all and ( max-width: 1024px){
+    #contenedorFormulario{
+        margin: 4%;
+        width: 58%;
+        padding: 2% 4% 2% 4%;
+    }
+    #contenedorFormulario>h1{
+        position: static;
+        padding: 2% 0% 2% 0%;
+    }
+
+    input[type="email"]{height: 5%; width: 55%;}
+
+    input[type="email"]{height: 5%; width: 55%;}
+
+    input:focus{width: 61%;}
+
+    textarea{width: 75%;} 
+
+    button{display: block;}
+
+}
+
+
+
+html{
+    background-color: white;
+}
+
+body {
+    padding:20px ;
+
+    background: linear-gradient(to bottom, rgba(227, 76, 38, 1), rgba(240, 101, 41, 0));
+    
+    text-align: center;
+
+
+}
+
+#page {
+    
+    box-shadow: 10px 10px 10px gray;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+
+    width: 960px;
+
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+
+    text-align: left;
+
+}
+.clearfix:before,
+.clearfix:after,
+    
+main{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    font-size: 0.8em;
+
+    background-image: url(/imgs-curso/fondoForm.jpg);
+
+    
+    width: 100%;
+    display: table;
+}
+        
+/*TITULO PAGINA*/
+header{
+
+    border-bottom: 10px;
+    border-color: black;
+    border-bottom-style:solid;
+
+    background:linear-gradient(to bottom, #0170B9, #27AADE);
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;   
+}
+
+body>div>header>h1{
+    position: relative;
+
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 25px;
+
+    padding-bottom: 25px;
+    padding-top: 20px;
+
+    text-align: left;
+    color: white;
+    font-family: 'Luckiest Guy';
+
+}
+
+#logoImg{
+
+    position: absolute;
+    width: 75px;
+    margin:-10px auto 0px 0px;
+
+}
+/* END TITULO PAGINA*/
+
+
+/* LISTAS */
+nav{
+
+    position: relative;
+    font-family:'Luckiest Guy';
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(213, 186, 50), rgb(255, 218, 62));
+    padding:1px
+
+}
+
+nav>ul>li:hover{
+    transition: 0.6s;
+    text-shadow: 0px 0px 5px #ff7e42;
+}
+
+#Contenidos:hover ul{height: 200px;}
+#Videos:hover ul{height: 200px;}
+#Contactos:hover ul{height: 200px;}
+
+
+nav>ul>li{
+
+    position: relative;
+    
+
+    padding-top:80px;
+
+    margin-top: 0px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    
+    list-style-type:none;
+    display: inline-block;
+
+
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+    font-size: 20px;
+    text-shadow: 2px 2px 4px #f06529;
+}
+
+/* MINI LISTAS */
+#Contenidos>ul{
+    position: absolute;
+
+    z-index: 2;
+
+    list-style: none;
+    text-align: center;
+    font-size: 0.9em;
+
+    height: 0px;
+
+    
+    padding-top: 0px;
+    width: 125px;
+    left: -40%;
+    top:104px;
+
+
+
+    overflow: hidden;
+
+    -webkit-transition: height 0.4s linear;
+    -moz-transition: height 0.4s linear;
+    -o-transition: height 0.4s linear;
+    transition: height 0.4s linear;
+}
+
+#Videos>ul{
+    position: absolute;
+
+    z-index: 2;
+
+    list-style: none;
+    text-align: center;
+    font-size: 0.9em;
+
+    height: 0px;
+
+    
+    padding-top: 0px;
+    width: 125px;
+    left: -96%;
+    top:104px;
+
+
+
+    overflow: hidden;
+
+    -webkit-transition: height 0.4s linear;
+    -moz-transition: height 0.4s linear;
+    -o-transition: height 0.4s linear;
+    transition: height 0.4s linear;
+}
+
+#Contactos>ul{
+    position: absolute;
+
+    z-index: 2;
+
+    list-style: none;
+    text-align: center;
+    font-size: 0.9em;
+
+    height: 0px;
+
+    
+    padding-top: 0px;
+    width: 125px;
+    left: -45%;
+    top:104px;
+
+
+
+    overflow: hidden;
+
+    -webkit-transition: height 0.4s linear;
+    -moz-transition: height 0.4s linear;
+    -o-transition: height 0.4s linear;
+    transition: height 0.4s linear;
+}
+
+
+/* ENLACES LISTAS */
+nav>ul>li>ul>li>a{
+    text-decoration:none;
+    color: white;
+}
+
+nav li ul li a{
+    padding: 10px;
+    color:#fff;
+    text-decoration:none;
+    display:block;
+}
+
+nav li ul li a{
+    padding: 10px;
+    color:#fff;
+    text-decoration:none;
+    display:block;
+}
+
+nav li ul li:first-child{ 
+    border-radius: 3px 3px 0 0;
+    margin-top: 10px;
+    position: relative;
+}
+
+nav li ul li:last-child{
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+/* flecha hacia arriba */
+nav li ul li:first-child::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    border: 7px solid transparent;
+    border-bottom-color: #e34c26;
+    left:50%;
+    top: -36%;
+    margin-left:-10px;
+    
+}
+
+nav li ul li { background-color: #e34c26;}
+nav li ul li:nth-child(odd){ background-color: #f06529;}
+nav li ul li:hover{ background-color: #ff7e42;}
+
+
+
+#Contenidos{
+    background-image:url(/Styles/imgs/book.png);
+    text-decoration:none;
+    color: white;
+}
+
+
+
+#Videos{
+    
+    background-image:url(Styles/imgs/film.png);
+    text-decoration:none;
+    color: white;
+}
+
+
+
+#Contactos{
+    background-image:url(Styles/imgs/mail.png);
+    text-decoration:none;
+    color: white;
+}
+/* END LISTAS */
+
+
+/*CONTENIDO*/
+
+#contenedorFormulario{
+    position: relative;
+    display: inline-block;
+
+    margin: 50px;
+    width: 600px;
+    padding: 20px 50px 20px 50px;
+    background-color: rgb(200, 200, 200, .7);
+    box-shadow: 3px 0px 8px rgb(0, 0, 0, .4);
+    
+}
+
+main>div>h1{
+    position: absolute;
+    margin: -16px 0px 0px 460px;
+    background-color: rgb(255, 255, 255, .7);
+    font-family: 'Aguafina Script';
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 2px #777;
+    padding: 0px 10px 0px 10px;
+}
+
+input{
+    display: block;
+    text-align: left;
+
+    border: 1px;
+    border-style: solid;
+    border-color: #e5e5e5;
+    box-shadow: 1px 0px 4px rgb(0, 0, 0, .3), 0px 0px 40px rgb( 0, 0, 0, .1)(inset);
+    color: black;
+    font: bold;
+
+    padding: 1px 4px 1px 45px;
+    margin-bottom: 10px;
+
+    transition: all 0.4s ease-in;
+}
+
+input[type="text"]{
+    height: 32px;
+    width: 330px;
+    background-color: rgb(200, 200, 200, .7);
+    background-image: url(/imgs-curso/icon-nombre.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+
+
+}
+input[type="email"]{
+    height: 32px;
+    width: 330px;
+    background-color: rgb(200, 200, 200, .7);
+    background-image: url(/imgs-curso/icon-correo.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+
+input:focus{
+    background-image: url(/imgs-curso/valid.png);
+    background-repeat: no-repeat;
+    background-position: 300px;
+    width: 370px;
+    box-shadow: 0px 0px 12px rgb(255, 255, 255);
+    
+}
+input:focus:invalid{
+    background-image: url(/imgs-curso/invalid.png);
+    background-repeat: no-repeat;
+    background-position: 300px;
+}
+
+
+
+textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    width: 90%;
+    height: 150px;
+    padding-left: 45px;
+    background-color: rgb(200, 200, 200, .7);
+    background-image: url(/imgs-curso/icon-mensaje.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+textarea:focus{
+    box-shadow: 0px 0px 12px rgb(255, 255, 255);
+}
+
+button{
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: #434343;
+    color : white;
+    background: linear-gradient(#e5e5e5,#2a2a2a);
+    box-shadow: 0px 1px 1px #353535 inset;
+    cursor: pointer;
+}
+button:hover{
+    background: linear-gradient(#2a2a2a,#e5e5e5);
+
+}
+
+
+/*CONTENIDO*/
+
+
+/*FOOTER*/
+footer{
+
+    color: white;
+    font-size: 0.7em;
+    text-align: center;
+
+    background:linear-gradient(to top, #0170B9, #27AADE);
+
+
+    border-top: 6px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-color: black;
+    border-style: solid;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+
+
+}
+/*FOOTER*/

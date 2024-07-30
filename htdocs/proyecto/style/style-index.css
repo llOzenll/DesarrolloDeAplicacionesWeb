@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Monserrat';
+    src: url(/fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+html{
+    background-color: #ceeae6;
+    display: block;
+}
+
+#img{
+    position: absolute;
+    left: 20%;
+    top: 20%;
+}
+
+#form{
+    font-family:'Monserrat' ;
+    width: 20%;
+    position: absolute;
+    left: 80%;
+    top: 15%;
+}
+
+
+

@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'GoogleSans';
+    src: url(/Fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf)format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+html{
+    width: auto;
+}
+
+body{
+    text-align: center;
+}
+
+h2{
+    margin-top: 5%;
+    font-family: 'GoogleSans';
+}
+
+button{
+    font-family: 'GoogleSans';
+    color: white;
+    background-color: gray;
+    border: none;
+    padding: 1%;
+}
+
+#Rojo:hover{
+    background-color: #ff3333;
+}
+#Amarillo:hover{
+    background-color: #add900;
+}
+#Oscuro:hover{
+    background-color: #454349;
+}

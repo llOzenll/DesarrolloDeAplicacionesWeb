@@ -1,0 +1,236 @@
+html{
+    background-color: white;
+}
+
+
+
+body {
+    padding:20px ;
+
+    background: linear-gradient(to bottom, rgba(227, 76, 38, 1), rgba(240, 101, 41, 0));
+    
+    text-align: center;
+
+
+}
+
+div{
+    
+    box-shadow: 10px 10px 10px gray;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+
+    width: 960px;
+
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+
+    text-align: left;
+
+}
+
+.clearfix:before,
+.clearfix:after,
+
+    
+main{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    text-align:left ;
+    font-family: Verdana ;
+    font-size: 0.8em;
+
+    background-image: url(/Styles/imgs/lgrey008.jpg);
+
+    
+    width: 100%;
+    display: table;
+}
+        
+
+header{
+    font-family:Courier;
+    font-size: 16px;
+    color: black;
+
+    border-bottom: 10px;
+    border-color: black;
+    border-bottom-style:solid;
+
+    background:linear-gradient(to bottom, #0170B9, #27AADE);
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+   
+   
+}
+
+h1{
+    background-image: url(/Styles/imgs/logo.png);
+    background-repeat: no-repeat;
+    background-position: 1px;
+
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 25px;
+
+    padding-bottom: 20px;
+    padding-top: 10px;
+
+    
+    text-align: left;
+    color: white;
+
+
+}
+
+
+nav{
+    font-family:monospace;
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(213, 186, 50), rgb(255, 218, 62));
+    padding-bottom: 1px;
+    
+    
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 0px;
+    
+}
+
+li{
+    padding-top:80px;
+
+    margin-top: 0px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    
+    list-style-type:none;
+
+    background-image:url(/Styles/imgs/book.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+    
+    text-align: center;
+    
+}
+
+a{
+    text-decoration:none;
+    color: white;
+
+}
+
+a:hover{
+    color:orange;
+}
+
+
+
+article{
+
+
+    float:left;
+    
+
+    width: 241px;
+
+    
+    
+
+    border-image-source: url(/recursos/movil.png);
+    border-image-width: 90px;
+    border-image-slice: 76 100 76 100;
+    border-image-outset: 22px;
+    border-image-repeat:stretch;
+
+    
+
+    background-color: white;
+    
+
+    text-align: center;
+    line-height: 1.8em;
+
+    
+    padding-top: 90px;
+    padding-right: 5px;
+    padding-bottom: 70px;
+    padding-left: 5px;
+
+    margin:30px;
+
+
+    
+}
+
+img{
+    background-image: radial-gradient(#ffffff 0%, #cecece );
+
+}
+
+h2{
+
+    text-shadow: 2px 2px gray;
+
+    font-family: 'Courier New', Courier, monospace;
+    
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 1px;
+    border-left: 0px;
+    border-color: black;
+    border-style: solid;  
+}
+
+
+
+
+footer{
+
+    color: white;
+    font-size: 0.7em;
+    text-align: center;
+
+    background:linear-gradient(to top, #0170B9, #27AADE);
+
+
+    border-top: 6px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-color: black;
+    border-style: solid;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+
+
+}
+
+    
+
+
+
+
+
+

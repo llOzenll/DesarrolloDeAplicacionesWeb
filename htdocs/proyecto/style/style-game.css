@@ -1,0 +1,66 @@
+/* @font-face {
+    font-family: 'Monserrat';
+    src: url(/fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+} */
+
+html, body{
+    overflow: hidden;;
+    margin: 0;
+    padding: 0;
+    image-rendering: auto;
+    display: block;
+}
+
+canvas{
+    position: absolute;
+    width: 0%;
+    top: -200%;
+}
+
+img{
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    animation-name: image;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+#img2{
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    animation-name: image2;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+#score{
+    position: absolute;
+    left: 50%;
+    /* font-family:'Monserrat'; */
+}
+
+@keyframes image{
+
+    from{
+        left: 0%;
+    }
+    
+    to{
+        left: 100%;
+    }
+}
+@keyframes image2{
+
+    from{
+        left: -100%;
+    }
+    
+    to{
+        left: 0%;
+    }
+}

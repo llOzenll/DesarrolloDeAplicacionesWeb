@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Resultado 8</title>
+    </head>
+    <body>
+        
+        <h1>Refrescar la Pagina para que el programa funcione!</h1>
+
+        <script>
+            
+            let nombre = prompt("dime tu nombre");
+            let edad = prompt("dime tu edad");
+            let sueldo = prompt("dime tu sueldo mensual");
+
+            let añosRestantes = 67-edad;
+            let año = "año";
+            let años = "años";
+            let sueldoAnual= sueldo * 12;
+
+            
+            alert("tu nombre es " + nombre);
+
+
+            if(edad >= 67){
+                alert("estas jubilado!");
+            }
+            else if(añosRestantes>= 10){
+                alert("te quedan "+ añosRestantes + " " + años + " para jubilarte");
+            }
+            else{
+                alert("te quedan "+ añosRestantes + " " + año + " para jubilarte");
+            }
+
+            
+            alert("tu sueldo anual es de "+ sueldoAnual + " euros");
+            
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,35 @@
+.form-control.is-valid ~ .invalid-feedback {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .card-columns {
+        column-count: 2;
+    }
+    
+    .invalid{
+        background-image: url(/img/exclamation.jpg);
+        background-repeat: no-repeat;
+        background-size: 4%;
+        background-position: 99%;
+        border-color: red;
+        width: 100%;
+    }   
+}
+
+@media (min-width: 992px) {
+    .card-columns {
+        column-count: 3;
+    }
+
+    .invalid{
+        background-image: url(/img/exclamation.jpg);
+        background-repeat: no-repeat;
+        background-size: 2.5%;
+        background-position: 99%;
+        border-color: red;
+        width: 100%;
+    }   
+}
+
+

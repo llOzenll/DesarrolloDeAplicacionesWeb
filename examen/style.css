@@ -1,0 +1,23 @@
+
+html{
+    width: 50%; 
+    margin:5% auto auto 40%;
+}
+
+table{
+    border: 2px solid darkslategrey;
+    width: 40%;
+    text-align: center;
+    background-color:#eaeded;
+}
+
+#button{
+    width: 40%;
+    border: 2px solid darkslategrey;
+    background-color:#eaeded;
+    transition-duration: 0.4s;
+}
+
+#button:hover{
+    background-color: #6d8383;
+}

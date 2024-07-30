@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Examen</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+    <table>
+        <th><td>Tabla de <span id="p"></span></td></th>   
+    </table>
+    <table class="t">
+        <th><td></td></th>   
+    </table>
+    <table class="t">
+        <th><td></td></th>   
+    </table>
+    <table class="t">
+        <th><td></td></th>   
+    </table>
+    <table class="t">
+        <th><td></td></th>   
+    </table>
+    <table class="t">
+        <th><td></td></th>   
+    </table>
+    <table class="t">
+    <th><td></td></th>   
+    </table>
+    <table class="t">
+        <th><td></td></th>   
+    </table>
+    <table class="t">
+        <th><td></td></th>   
+    </table>
+    <table class="t">
+        <th><td></td></th>   
+    </table>
+    <table class="t">
+        <th><td></td></th>   
+    </table>
+    <table class="t">
+        <th><td></td></th>   
+    </table>
+    <br>
+    <button id="button" onclick="Imprimir()">Imprimir</button>
+
+    <script>
+
+        let pregunta = prompt('Ingresa un numero entero');
+        let pregunta1 = prompt('que operacion quieres que realize con el numero?, una tabla de multiplicar?(M), la potencia del 0 al 10?(P)');
+
+        pregunta = parseInt(pregunta)+0;
+
+        if(pregunta1 == 'M'){
+            document.getElementById('p').innerHTML= 'Multiplicar';
+            M();
+        }
+        else if(pregunta1 == 'P'){
+            document.getElementById('p').innerHTML= 'Potencias';
+            P();
+        }
+        else{alert('Error! Debes elegir entre "M" y "P"')}
+
+        function M(){
+            for(let i = 0; i < 11; i++ ){
+                let R = pregunta*i;
+                let R1 = pregunta + ' * '  + i + ' = ' + R ;
+                let t = document.getElementsByClassName('t')[i].innerHTML= R1; 
+            }
+        }
+
+        function P(){
+            for(let i = 0; i < 11; i++ ){
+                let R = Math.pow(pregunta,i);
+                let R1 = pregunta + ' ^ ' + i + ' = ' + R ;
+                let t= document.getElementsByClassName('t')[i].innerHTML= R1; 
+            }
+        }
+
+        function Imprimir(){
+            window.print();
+        }
+
+
+
+    </script>
+</body>
+
+</html>
